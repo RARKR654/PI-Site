@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <a class="voltar" href="../artigo/artigo.html" alt="voltar"><button>◀</button></a> <!--bora tar colocando só o voltar e avançar conforme formos adicionando os elementos -->
+            <nav>
+                <ul>
+                    <li class="cabecalho"><a href="../artigo/artigo.html" class="a">Artigo</a></li>
+                    <li class="cabecalho"><a href="../index.html" class="a">Tabela</a></li>
+                    <li class="cabecalho"><a href="../contato/contato.html" class="a">Contato</a></li>
+                </ul>
+            </nav>
+        <a class="avancar" href="../index.html"><button>▶</button></a>
+    </header>
+    <div id="content-left">
+        <form action="">
+            <h1>Envio para o e-mail: </h1>
+            <fieldset>
+                <legend>
+                    <h2>Informações para o envio</h2>
+                </legend>
+                <div class="field">
+                    <label for="text">Título:</label>
+                    <input id="titular" type="text"> </inputL>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="Problema">Problema:</label>
+                        <select id="Probl" name="Problema">
+                            <option value=""></option>
+                            <option value="Dados errados">Dados errados</option>
+                            <option value="Erro no site">Erro no site</option>
+                            <option value="Citação errada">Citação errada</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="Corpo:">Corpo do texto:</label>
+                        <textarea id= "txt"type="Corpo" rows="4" cols="50">Digite seu texto aqui...</textarea>                            
+                    </div>
+                </div>
+                <button id="envio" onclick="enviard();">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="contato.js"></script>
+</body>
